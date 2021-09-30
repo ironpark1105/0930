@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변형</title>
+    <style>
+        body{
+            text-align: center;
+            margin: auto auto;
+        }
+        .box{
+            border: 2px solid #666;
+            width: 200px;
+            height: 200px;
+            
+            margin: 0 auto;
+        }
+        .box .trans{
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+        .box .scale{
+            width: 200px;
+            height: 200px;
+            background: lightgreen;
+        }
+        .box:hover .trans{
+            transform: translate(100px, 100px);
+            transition-duration: 2s;
+        }
+        .box:hover .scale{
+            transform: scale(2, 2);
+            transition: 2s;
+        }
+        .rocate{
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+        .box:hover .rocate{
+            transform: rotate(1200deg);
+            transition-duration: 2s;
+        }
+        .skew{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+        }
+        .box:hover .skew{
+            transform: skew(30deg,0deg);
+            transition-duration: 2s;
+        }
+        .box3d{
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: violet;
+            perspective: 100px;
+            
+        }
+        .rotate3d{
+            height: 200px;
+            background: red;
+            transition: 2s;
+            perspective: 100px;
+        }
+        .box3d:hover .rotate3d{
+            transform: rotateX(180deg);
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="trans">trans</div>
+    </div>
+  
+        <div class="box">
+        <div class="scale">scale</div>
+    </div>
+   
+        <div class="box">
+        <div class="rocate">rocate</div>
+    </div>
+        
+    <div class="box">
+        <div class="skew">rocate</div>
+    </div>
+
+    <div class="box3d">
+        <div class="rotate3d">3drotate</div>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+:root{
+    --text-color: #333;
+    --main-color: #e21e26;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    
+    color: var(--text-color);
+}
+
+body{
+    color: var(--text-color);
+    font-family: "맑은 고딕", sans-serif, ;
+    font-size: 16px;
+}
+
+section{
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section h2{
+    font-size: 24px;
+    color: var(--main-color);
+}
+section .title-text{
+    font-size: 44px;
+}
+
+.about-box{
+    margin-top: 30px;
+    background: #ccc;
+    display: flex;
+}
+.about-box a{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    transition: 0.4s;
+}
+.about-box a:first-child{
+    background-image: url(./images/info-image-1.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-box a:nth-child(2){
+    background-image: url(./images/info-image-2.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-box a > div{
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section h3{
+    font-weight: normal;
+}
+
+.about-box a div h3{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.about-box a div p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.info-box{
+    opacity: 0;
+}
+.about-box a:hover .info-box{
+    opacity: 1;
+}
+.about-box a:hover{
+    transform: translate(0, -20px);
+}
